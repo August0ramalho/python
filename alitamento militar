@@ -1,0 +1,11 @@
+name=str(input("digite seu nome"))
+data=int(input("digite o ano de nascimento"))
+idade=2024-data
+if idade == 18:
+     print("voce esta na idade de se alistar")
+elif idade < 18:
+     ano=2024-data
+     print("voce não pode se alistar falta",ano)
+elif idade > 18:
+     ano = 2024-data
+     print("voce tem que se alistar passou", ano)
