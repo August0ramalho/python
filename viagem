@@ -1,0 +1,32 @@
+print("1-fernadno de noronha  preço:2500 por pessoa datas:25/01/2024 a 03/02/2024")
+print("2-sao paulo  preço:1500 por pessoadatas:01/04/2024 a 03/05/2024")
+print("3-rio de janeiro preço:2200 por pessoa datas:25/02/2024 a 03/03/2024")
+print("4-curitiba preço:700 por pessoa datas:07/01/2024 a 20/01/2024")
+print("5-itabirito  preço:500 por pessoa datas:04/01/2024 a 24/01/2024")
+
+
+desconto=int(input("voce tem algum cumpom de desconto? 1-sim 2-não"))
+if desconto==1:
+    print("1-fernadno de noronha  preço:2000 por pessoa datas:25/01/2024 a 03/02/2024")
+    print("2-sao paulo  preço:1000 por pessoa datas:01/04/2024 a 03/05/2024")
+    print("3-rio de janeiro preço:2000 por pessoa datas:25/02/2024 a 03/03/2024")
+    print("4-curitiba  preço:650 por pessoa datas:07/01/2024 a 20/01/2024")
+    print("5-itabirito  preço:450 por pessoa datas:04/01/2024 a 24/01/2024")
+else:
+   print("nao pode ter algum desconto")
+   
+escolha=int(input("digite algum numero das localidades acima para escolher a sua viagem"))
+
+if escolha==1:
+   print("voce escolheu fernando de noronha taxa de embarque R$27,80")
+if escolha==2:
+   print("voce escolheu sao paulo taxa de embarque R$31,80")
+if escolha==3:
+   print("voce escolheu rio de janeiro taxa de embarque R$30,00")
+if escolha==4:
+   print("voce escolheu curitiba taxa de embarque R$29,80")
+if escolha==5:
+   print("voce escolheu itabirito taxa de embarque R$17,80")
+
+
+print("taxa de embarque FIXA:R$ 5,90")
