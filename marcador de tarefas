@@ -1,0 +1,91 @@
+operações:
+#a) Adicionar uma nova tarefa.
+#b) Visualizar todas as tarefas.
+#c) Marcar uma tarefa como concluída.
+#d) Atualizar uma tarefa existente.
+#e) Remover uma tarefa.
+tarefas=[]
+import time
+time.sleep(1)
+print("O Gerenciador de tarefas python está inicializando")
+print(".")
+print("..")
+print("...")
+def menu():
+print('----------------'*10)
+print('menu')
+escolha=int(input('''
+[1]cadastrar uma nova tarefa
+[2]exibir taferas
+[3]remover tarefas
+[4]Marcar uma tarefa como concluída.
+[5]Atualizar uma tarefa existente.
+escolha uma opção
+[6]datas de suas tarefas
+[7]digite para sair
+'''))
+if escolha ==1:
+cadastrar()
+print('----------------'*10)
+elif escolha ==2:
+exibir()
+print('----------------'*10)
+elif escolha ==3:
+remover()
+print('----------------'*10)
+elif escolha ==4:
+marcar()
+elif escolha ==5:
+atualizar()
+print('----------------'*10)
+elif escolha ==6:
+data()
+print('----------------'*10)
+elif escolha ==7:
+print("O Gerenciador de tarefas python está finalizando")
+print("...")
+print("..")
+print(".")
+print('---------'*10)
+else:
+print('escolha uma das opçoes')
+menu()
+def cadastrar():
+print('----------------'*10)
+nome=str(input('digite sua tarefa '))
+tarefas.append(nome)
+print('tarefa adicionada com sucesso')
+menu()
+print('----------------'*10)
+def exibir():
+print('----------------'*10)
+for c in tarefas:
+print(c)
+menu()
+def remover():
+for num, tar in enumerate(tarefas):
+print(num+1, tar)
+n = int(input('digite o numero das tarefas que você quer remover '))
+for c,ta in enumerate (tarefas):
+if c == n-1:
+tarefas.remove(ta)
+print('tarefa removido')
+print('----------------'*10)
+print('----------------'*10)
+menu()
+def atualizar():
+print('----------------'*10)
+reta=str(input('digite a nova tarefa que queira adicionar '))
+tarefas.append(tarefas)
+print('----------------'*10)
+menu()
+def marcar():
+concluidas = input('qual tarefa deseja marcar como concluída? ')
+tarefas.remove(concluidas)
+tarefas.append(concluidas)
+print('atividade atualizada!!!')
+print(tarefas)
+print('----------------'*10)
+menu()
+def data():
+data=int(input("qual dia qu
