@@ -1,0 +1,38 @@
+#Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. 
+#Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. 
+#Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
+
+metros=float(input('digite quantos metros tem o comodo:'))
+metros_quadrados=metros*metros
+
+litro_da_tinta= metros/3
+litro_da_tinta*18
+print(litro_da_tinta ) 
+round(2.0)
+print('metros do comodo',metros)
+print('metros quadrados do comodo',metros_quadrados)
+
+
+#litros = metros/6
+#if(metros%108 > 0 and metros%21.6>0): 
+#latas = metros//108
+#latas = latas + 1
+#preçol = latas * 80
+#galao = metros//21.6
+#galao = galao + 1
+#preçog = galao * 25
+#print("Você vai precisar de: {} latas de 18L e vai gastar {} reais".format(latas,preçol))
+#else:
+#latas = metros/108
+#preçol = latas * 80
+#galao = metros/21.6
+#preçog = galao * 25
+#print("Você vai precisar apenas de {} latas de 18L e vai gastar {} reais".format(latas,preçol))
+#print("Você vai precisar apenas de {} galao de 3,6L e vai gastar {} reais".format(galao,preçog))
+
+
+
+
+
+
+
